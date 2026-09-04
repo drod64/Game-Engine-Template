@@ -1,12 +1,14 @@
 #include <iostream>
-#include <entt/entt.hpp>
-#include <SM/Vec3.h>
+#include <conduit/core/World.hpp>
 
 int main()
 {
-    sm::Vec3 testVec(4, 5, 3);
-    entt::registry testRegistry;
-    auto e = testRegistry.create();
+    conduit::core::World testWorld;
+
+    auto e = testWorld.m_registry.create();
+
     std::cout << "Hello World!\n";
+    std::cout << "Entity: " << static_cast<uint32_t>(e) << '\n';
+    
     return 0;
 }

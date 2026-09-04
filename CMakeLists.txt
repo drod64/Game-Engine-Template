@@ -61,3 +61,9 @@ add_subdirectory(${CMAKE_SOURCE_DIR}/external/sm)
 target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_SOURCE_DIR}/external/sm/include)
 target_link_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/external/sm)
 target_link_libraries(${PROJECT_NAME} SM)
+
+# Link conduit library.
+add_subdirectory(${CMAKE_SOURCE_DIR}/external/conduit)
+target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_SOURCE_DIR}/external/conduit/include)
+target_link_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/external/conduit)
+target_link_libraries(${PROJECT_NAME} CONDUIT)

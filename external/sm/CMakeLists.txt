@@ -1,6 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
 
-# SFML-MATH
 project(SM) 
 
 set(SOURCE_FILES
