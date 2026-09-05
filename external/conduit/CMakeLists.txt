@@ -3,7 +3,6 @@ cmake_minimum_required(VERSION 3.20)
 project(CONDUIT)
 
 set(SOURCE_FILES
-    src/World.cpp
     )
 
 add_library(${PROJECT_NAME} STATIC ${SOURCE_FILES})
